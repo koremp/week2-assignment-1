@@ -10,12 +10,6 @@ function App() {
 
   const { count } = state;
 
-  function handleClick() {
-    setState({
-      count: count + 1,
-    });
-  }
-
   function handleClickNumber(number) {
     setState({
       count: count + number,
@@ -27,7 +21,7 @@ function App() {
       <p>Counter</p>
       <Counter
         count={count}
-        onClick={handleClick}
+        onClick={() => handleClickNumber(1)}
       />
       <Buttons onClick={handleClickNumber} />
     </div>
