@@ -5,9 +5,7 @@ function Counter({ count, onClick }) {
     <button type="button" onClick={onClick}>
       Click me!
       (
-      {
-        count
-      }
+      { count }
       )
     </button>
   );
